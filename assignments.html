@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Assignments</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- SIDEBAR (same as others) -->
+  <div class="sidebar">
+  <h2>🌸 Spring 2026</h2>
+  <a href="index.html">Dashboard</a>
+  <a href="schedule.html">Schedule</a>
+  <a href="courses.html">Courses</a>
+  <a href="assignments.html">Assignments</a>
+  <a href="week-plan.html">Week Plan</a>
+  <a href="daily.html">Daily Planner</a>
+  <a href="graduation.html">Graduation Path</a>
+</div>
+  <div class="main">
+    <div class="card">
+      <h3>Upcoming Assignments</h3>
+
+      <input id="assignmentName" placeholder="Assignment name">
+      <input id="assignmentDate" type="date">
+      <input id="assignmentTime" type="time">
+
+      <button onclick="addAssignment()">Add</button>
+
+      <div id="assignmentList"></div>
+    </div>
+  </div>
+
+</div>
+
+<script src="js/storage.js"></script>
+<script src="js/assignments.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
