@@ -1,0 +1,80 @@
+:root {
+  --bg: #0f0c0e;
+  --card: #4b2735;
+  --card-light: #5c3142;
+  --text: #f5f1f3;
+  --accent: #d8a1b3;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Georgia, serif;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  background: #120d10;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-bottom: 15px;
+}
+
+.sidebar a {
+  display: block;
+  padding: 10px;
+  margin-bottom: 8px;
+  background: var(--card);
+  border-radius: 10px;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  background: var(--card-light);
+}
+
+/* Main */
+.main {
+  padding: 30px;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+input, textarea, button {
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+}
+
+button {
+  background: var(--accent);
+  cursor: pointer;
+}
+
+.list-item {
+  background: var(--card-light);
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
