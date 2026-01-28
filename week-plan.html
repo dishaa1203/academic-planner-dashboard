@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Week Plan</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="app">
+  <!-- sidebar -->
+  <div class="app">
+  <!-- sidebar -->
+  <div class="sidebar">
+  <h2>🌸 Spring 2026</h2>
+  <a href="index.html">Dashboard</a>
+  <a href="schedule.html">Schedule</a>
+  <a href="courses.html">Courses</a>
+  <a href="assignments.html">Assignments</a>
+  <a href="week-plan.html">Week Plan</a>
+  <a href="daily.html">Daily Planner</a>
+  <a href="graduation.html">Graduation Path</a>
+ </div> 
+  <div class="main">
+    <h2>Weekly Calendar</h2>
+
+    <table id="weekCalendar">
+      <tr>
+        <th>Day</th><th>Plan</th>
+      </tr>
+      <tr><td>Monday</td><td contenteditable></td></tr>
+      <tr><td>Tuesday</td><td contenteditable></td></tr>
+      <tr><td>Wednesday</td><td contenteditable></td></tr>
+      <tr><td>Thursday</td><td contenteditable></td></tr>
+      <tr><td>Friday</td><td contenteditable></td></tr>
+      <tr><td>Saturday</td><td contenteditable></td></tr>
+      <tr><td>Sunday</td><td contenteditable></td></tr>
+    </table>
+
+    <button onclick="saveWeekCalendar()">Save Week</button>
+  </div>
+</div>
+
+<script src="js/storage.js"></script>
+<script src="js/planners.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
+

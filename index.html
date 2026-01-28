@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="app">
+
+<div class="sidebar">
+  <h2>🌸 Spring 2026</h2>
+  <a href="index.html">Dashboard</a>
+  <a href="schedule.html">Schedule</a>
+  <a href="courses.html">Courses</a>
+  <a href="assignments.html">Assignments</a>
+  <a href="week-plan.html">Week Plan</a>
+  <a href="daily.html">Daily Planner</a>
+  <a href="graduation.html">Graduation Path</a>
+</div>
+
+<div class="main">
+   <div class="card">
+  <h3>Semester Settings</h3>
+  <input id="semTitle" placeholder="Semester title">
+  <input id="semDesc" placeholder="Description">
+  <button onclick="saveSemester()">Save</button>
+</div>
+
+<div class="card">
+  <h3 id="semesterTitle"></h3>
+  <p id="semesterDesc"></p>
+</div>
+
+
+    <div class="card">
+      <h3>Semester Goals</h3>
+      <input id="goalInput" placeholder="New goal">
+      <button onclick="addGoal()">Add</button>
+      <div id="goalList"></div>
+    </div>
+  </div>
+
+</div>
+<script src="js/storage.js"></script>
+<script src="js/semester.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

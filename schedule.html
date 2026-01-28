@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Schedule</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="app">
+  <!-- sidebar same as others -->
+  <div class="sidebar">
+    <h2>🌸 Spring 2026</h2>
+    <a href="index.html">Dashboard</a>
+    <a href="schedule.html">Schedule</a>
+    <a href="courses.html">Courses</a>
+    <a href="assignments.html">Assignments</a>
+    <a href="week-plan.html">Week Plan</a>
+    <a href="daily.html">Daily Planner</a>
+    <a href="graduation.html">Graduation Path</a>
+  </div>
+  <div class="main">
+    <div class="card">
+      <h3>Weekly Schedule</h3>
+
+      <select id="day">
+        <option>Monday</option><option>Tuesday</option>
+        <option>Wednesday</option><option>Thursday</option>
+        <option>Friday</option>
+      </select>
+
+      <select id="time">
+        <option>8–9 AM</option><option>9–10 AM</option>
+        <option>10–11 AM</option><option>11–12 PM</option>
+      </select>
+
+      <input id="activity" placeholder="Activity">
+      <button onclick="addSchedule()">Add</button>
+
+      <table id="scheduleTable"></table>
+    </div>
+  </div>
+</div>
+
+<script src="js/storage.js"></script>
+<script src="js/schedule.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
